@@ -1,0 +1,197 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Join Chatroom Container */
+#join-container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+#join-container h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+#username {
+    width: 92%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#joinButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#joinButton:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Chat Container */
+#chat-container {
+    width: 400px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Chat Header */
+#header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#exitButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Messages Section */
+#messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Message Wrapper */
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+}
+
+/* User Name */
+.sender-name {
+    font-size: 10px;
+    color: #bbb;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+/* Message Bubbles */
+.message {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    position: relative;
+}
+
+/* Sent Messages (User) */
+.you {
+    align-self: flex-end;
+    background: #007bff;
+    color: white;
+    border-bottom-right-radius: 5px;
+}
+
+/* Received Messages (Others) */
+.others {
+    align-self: flex-start;
+    background: #e4e6eb;
+    color: black;
+    border-bottom-left-radius: 5px;
+}
+
+/* System Messages (Join/Leave Notifications) */
+.system-message {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Timestamp */
+.timestamp {
+    font-size: 10px;
+    color: gray;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
+
+/* Input Container */
+#input-container {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    background: #f0f2f5;
+}
+
+#sendButton {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#sendButton:hover {
+    background: #0056b3;
+}
+
+/* Scrollbar Styling */
+#messages::-webkit-scrollbar {
+    width: 5px;
+}
+
+#messages::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
