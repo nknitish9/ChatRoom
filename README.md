@@ -32,9 +32,9 @@ Enter a username to join the chat
 Start sending messages and see them broadcasted to all connected users
 
 ## Technologies Used
-Node.js
-Express
-Socket.io
+- Node.js
+- Express
+- Socket.io
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
